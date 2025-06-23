@@ -219,7 +219,7 @@ export function CardHighlight() {
       date: "Currently Working On",
       cover: smart_study_logo,
       logo: smart_study_logo,
-      title: <>Smart Study</>,
+      title: <>Engrnuity</>,
       description:
         "A website for engineering students from all over the world to study and find resources all in one place. Videos, quizzes, flashcards, worksheets, etc are all available.",
     },

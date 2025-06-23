@@ -56,13 +56,13 @@ export function CardBlog() {
     },
     {
       id: 2,
-      title: "Smart Study",
+      title: "Engrnuity",
       description:
-        "Smart Study is a project that I began working on in August. The purpose of this project is to serve as a study website strictly for engineering students. Users will be able to create flashcards, generate cards using AI, watch videos, take quizzes, and much more. The waitlist for Smart Study is live, click the button to join!",
+        "Engrnuity is a web based application that serves as a study website strictly for engineering students. Users will be able to create flashcards, generate cards using AI, watch videos, take quizzes, and much more. The waitlist for Engrnuity is live and changes are being made daily!",
       technologies:
         "Next.js, Node.js, React, Javascript, Material UI, Firebase, Stack Auth",
       status: "CURRENT PROJECT - MASSIVE CHANGES IN PLACE",
-      link: "https://smartstudycs.vercel.app/",
+      link: "https://engrnuity.vercel.app/",
       buttonText: "SITE LIVE NOW",
       image: "/smart_study_logo.png",
     },
