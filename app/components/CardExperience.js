@@ -102,15 +102,15 @@ export function CardExperience() {
               fontFamily: "Kanit",
             }}
           >
-            Engineered a Python-based website monitoring system deployed with
-            Docker on Azure, increasing service uptime and reducing false
-            positives by automating issue detection and service recovery.
-            Developed a custom PDF compression and linearization script using
-            Ghostscript and JavaScript, achieving a 60% reduction in file sizes
-            and improving page load times for web-based document delivery
-            systems. Revamped the company’s internal website using Jinja,
-            JavaScript, HTML, and CSS, delivering a modern, accessible, and
-            responsive design tailored to user needs and workflows.
+            Devised a Python-based website monitoring system deployed with
+            Docker on Azure, reducing downtime and false alerts through
+            automated issue detection and self-service recovery. Developed a
+            custom PDF compression and linearization script using GhostScript
+            and JavaScript, reducing file sizes by 60% and improving page load
+            times for web-based document delivery systems. Revamped the
+            company’s internal website using Jinja, HTML, and CSS, delivering a
+            modern, accessible design aligned with user feedback and workplace
+            requirements, resulting in a 40% increase in active users.
           </Typography>
         </CardContent>
       </Card>
@@ -209,15 +209,15 @@ export function CardExperience() {
               fontFamily: "Kanit",
             }}
           >
-            Developed a Python-based hash file system to extract hardware IDs
-            from Surface laptops, enabling secure access and streamlined
-            software updates across the organization. Managed a cross-functional
-            team to execute a full system rollout, including device reimaging,
-            software updates, and hardware replacements as needed, ensuring
-            smooth deployment across the organization. Diagnosed and patched
-            system vulnerabilities and set up user and support accounts to
-            ensure secure, functional access across hundreds of laptops and
-            mobile devices.
+            Created a Python-based hash file to securely generate and store
+            hardware IDs from Surface laptops, streamlining the reimaging and
+            software update process across the organization. Led a
+            cross-functional team to execute a system-wide rollout of Surface
+            laptops and mobile devices, overseeing reimaging, software updates,
+            and hardware replacements to ensure a smooth and efficient
+            deployment. Assisted with hardware setup and deployment across the
+            building, connecting devices to secure networks, configuring
+            workstations, and supporting employee moves and relocations.
           </Typography>
         </CardContent>
       </Card>
@@ -316,13 +316,15 @@ export function CardExperience() {
               fontFamily: "Kanit",
             }}
           >
-            Designed a multi-tiered Discord bot using Python and JavaScript to
-            deliver real-time sneaker and clothing release alerts, including
-            drop times, locations, and raffles. Optimized the platform by
-            integrating new features that led to an increase in monthly
-            subscriptions and improved customer retention through user insights.
-            Participated in code reviews, pull requests, and system testing
-            throughout the full development lifecycle.
+            Designed a multi-tiered real-time alert system using Python and
+            JavaScript to track and deliver sneaker and clothing release
+            notifications, including drop times, locations, and raffles.
+            Contributed to pull requests and system testing efforts using Git
+            and PyTest, writing unit tests and conducting stress tests to ensure
+            code quality, identify bottlenecks, and validate performance under
+            certain conditions. Enhanced the platform by integrating new
+            functionality that led to increased monthly subscriptions and
+            improved user retention.
           </Typography>
         </CardContent>
       </Card>
@@ -422,12 +424,11 @@ export function CardExperience() {
             }}
           >
             Created an interactive reservation system with real-time updates
-            using JavaScript and AJAX, leading to a 30% increase in online
-            bookings for Fyllan restaurants. Integrated third-party APIs using
-            JavaScript&apos;s fetch API, enhancing website functionality with
-            features like real-time restaurant updates and social media feeds.
-            Worked alongside senior developers to design UI components and
-            refine them based on accessibility guidelines.
+            using JavaScript and AJAX, enhancing user experience and
+            contributing to a 30% increase in online bookings for Fyllan
+            restaurants. Integrated third-party APIs using JavaScript’s fetch to
+            check table availability and suggest best reservation times,
+            enhancing the site’s interactivity and usability.
           </Typography>
         </CardContent>
       </Card>
