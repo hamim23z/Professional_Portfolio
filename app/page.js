@@ -167,7 +167,7 @@ export default function HomePage() {
               <GitHubIcon sx={{ fontSize: isSmallScreen ? "24px" : "30px" }} />
             </Link>
             <Link
-              href="https://drive.google.com/file/d/10aVkaVwIMTI_5hLMNwWo0wqT-05K8lwK/view?usp=sharing"
+              href="https://drive.google.com/file/d/16snozCBW8EsVM_cQWvBkUgw9LizDO3dg/view?usp=sharing"
               target="_blank"
               passHref
               style={{ color: "white", textDecoration: "none" }}
