@@ -1,5 +1,5 @@
 "use client";
-import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme, Stack } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 import { CardHighlight } from "./components/CardHighlight";
@@ -13,249 +13,191 @@ import { TechStack } from "./components/TechStack";
 import { TechStack2 } from "./components/TechStack2";
 import { TechStack3 } from "./components/TechStack3";
 
+// Use MUI's responsive system for breakpoints
 export default function HomePage() {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  const isLaptop = useMediaQuery(theme.breakpoints.between("sm", "lg"));
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: { xs: "column", md: "row" },
+        minHeight: "100vh",
+        bgcolor: "#090807",
+      }}
+    >
+      {/* Left Section / Sidebar */}
       <Box
         sx={{
+          flex: { xs: "none", md: "0 0 380px" },
+          minWidth: { xs: "100%", md: "320px" },
+          maxWidth: { md: "420px" },
+          width: { xs: "100%", md: "33%" },
+          position: { xs: "static", md: "fixed" },
+          top: 0,
+          left: 0,
+          height: { xs: "auto", md: "100vh" },
           display: "flex",
-          flexDirection: isMobile ? "column" : "row",
-          minHeight: "100vh",
-          overflowX: "hidden",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: { xs: "flex-start", md: "center" },
+          textAlign: "center",
+          p: { xs: 2, md: 4 },
+          zIndex: 10,
+          bgcolor: "#141210",
+          borderRight: { md: "2px solid #232220" },
+          overflowY: "auto",
         }}
       >
-        {/* left side of screen */}
         <Box
           sx={{
-            width: isSmallScreen ? "100%" : isLaptop ? "420px" : "35%",
-            position: isSmallScreen ? "static" : "fixed",
-            height: isSmallScreen ? "auto" : "100vh",
+            backgroundColor: "#151312",
             display: "flex",
             flexDirection: "column",
-            justifyContent: isSmallScreen
-              ? "flex-start"
-              : isLaptop
-              ? "flex-start"
-              : "center",
             alignItems: "center",
-            textAlign: "center",
-            padding: isSmallScreen ? 2 : 4,
-            zIndex: 1,
-            paddingTop: isSmallScreen ? "100px" : isLaptop ? "80px" : "inherit",
-            paddingBottom: isSmallScreen ? "40px" : "inherit",
+            height: { xs: "180px", sm: "300px" },
+            width: "100%",
+            maxWidth: "280px",
+            borderRadius: 3,
+            border: "2px solid #fff",
+            p: 2,
+            mb: 2,
           }}
         >
-          <Box
-            sx={{
-              backgroundColor: "#151312",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-              height: isSmallScreen ? "200px" : "250px",
-              maxWidth: "300px",
-              width: "100%",
-              borderRadius: "10px",
-              border: "2px solid #fff",
-              padding: 2,
-              marginBottom: 2,
+          <Image
+            src={"/github_cool.jpg"}
+            alt="Profile picture"
+            width={isMobile ? 100 : 140}
+            height={isMobile ? 100 : 140}
+            style={{
+              borderRadius: "100%",
+              border: "2px solid #777",
             }}
-          >
-            <Image
-              src={"/github_cool.jpg"}
-              alt="Profile picture"
-              width={isSmallScreen ? 120 : 160}
-              height={isSmallScreen ? 120 : 160}
-              style={{
-                borderRadius: "100%",
-              }}
-            />
-
-            <Typography
-              variant="h6"
-              sx={{
-                color: "white",
-                textTransform: "uppercase",
-                textAlign: "center",
-                fontFamily: "Kanit",
-                fontWeight: 700,
-                paddingTop: "16px",
-                fontSize: isSmallScreen ? "1rem" : "1.25rem",
-              }}
-            >
-              Hamim Choudhury
-            </Typography>
-
-            <Typography
-              variant="body2"
-              sx={{
-                color: "white",
-                fontFamily: "Kanit",
-                textAlign: "center",
-                fontWeight: 400,
-                marginTop: "8px",
-                lineHeight: "20px",
-                marginBottom: "40px",
-                fontSize: isSmallScreen ? "0.75rem" : "0.875rem",
-              }}
-            >
-              A software engineer with a passion to develop projects, big or
-              small.
-            </Typography>
-          </Box>
-
+            priority
+          />
           <Typography
-            variant={isSmallScreen ? "h5" : "h4"}
+            variant="h6"
             sx={{
-              fontWeight: 900,
-              marginBottom: 2,
+              color: "white",
+              textTransform: "uppercase",
+              fontFamily: "Kanit",
+              fontWeight: 700,
+              pt: 2,
+              fontSize: { xs: "1rem", md: "1.25rem" },
             }}
           >
-            Software Engineer
+            Hamim Choudhury
           </Typography>
-
           <Typography
+            variant="body2"
             sx={{
-              maxWidth: "600px",
-              fontSize: isSmallScreen ? "0.9rem" : "1rem",
-              lineHeight: 1.7,
-              paddingX: isSmallScreen ? 1 : 0,
+              color: "white",
+              fontFamily: "Kanit",
+              fontWeight: 400,
+              mt: 1,
+              mb: 2,
+              px: 1,
+              fontSize: { xs: "0.8rem", md: "1rem" },
             }}
           >
-            Hi! I&apos;m Hamim Choudhury, a Computer Science student at The City
-            College of New York. My journey of coding started in middle school,
-            where I took a computer course and used MIT&apos;s Scratch as my
-            first language. And that is how my passion for coding began. I
-            started off by building simple websites and I explored how to code
-            myself. I now code on a regular basis, learning a multitude of
-            languages and using them very often.
-            <br></br> <br></br>I started off as a frontend engineer only, but
-            have now become a full-stack engineer. I love to build projects that
-            can solve real-world problems and ones that people will use on a
-            regular basis.
+            A software engineer with a passion to develop projects, big or small.
           </Typography>
+        </Box>
 
-          <Box
+        <Typography
+          variant="h5"
+          sx={{ color: "#e0e0e0", fontWeight: 900, mb: 2, letterSpacing: 1 }}
+        >
+          Software Engineer
+        </Typography>
+        <Typography
+          sx={{
+            maxWidth: "90vw",
+            fontSize: { xs: "0.95rem", md: "1.05rem" },
+            lineHeight: 1.7,
+            mb: 2,
+            color: "#e0e0e0",
+          }}
+        >
+          Hi! I&apos;m Hamim Choudhury, a Computer Science student at The City College of New York. My coding journey began with MIT's Scratch and evolved through building websites to full-stack engineering. I love projects that solve real-world problems and get used daily.
+        </Typography>
+        <Stack direction="row" spacing={2} justifyContent="center" mb={2}>
+          <Link href="https://www.linkedin.com/in/hamimc/" target="_blank">
+            <LinkedInIcon sx={{ fontSize: 28, color: "#fff" }} />
+          </Link>
+          <Link href="https://github.com/hamim23z" target="_blank">
+            <GitHubIcon sx={{ fontSize: 28, color: "#fff" }} />
+          </Link>
+          <Link href="https://drive.google.com/file/d/1zV5BjMJeF9iqVCPEftXepI6VFvgHL0gS/view?usp=sharing" target="_blank">
+            <FileCopyIcon sx={{ fontSize: 28, color: "#fff" }} />
+          </Link>
+          <Link href="mailto:hamimc232@gmail.com" target="_blank">
+            <EmailIcon sx={{ fontSize: 28, color: "#fff" }} />
+          </Link>
+        </Stack>
+      </Box>
+
+      {/* Main Content */}
+      <Box
+        sx={{
+          flex: 1,
+          ml: { xs: 0, md: "420px" }, // Match the max width of left sidebar
+          width: { xs: "100%", md: "calc(100vw - 420px)" }, // Use remaining viewport width
+          bgcolor: "#11100e",
+          minHeight: "100vh",
+          p: { xs: 2, md: 6 },
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          overflowY: "auto",
+        }}
+      >
+        {/* Projects Section */}
+        <Box sx={{ width: "100%", maxWidth: "900px", mb: 4 }}>
+          <Typography
+            variant="h5"
             sx={{
-              display: "flex",
-              justifyContent: "center",
-              gap: 2,
-              marginTop: "16px",
+              fontWeight: 700,
+              textAlign: "center",
+              pb: 3,
+              color: "#fff",
+              borderBottom: "1px solid #222",
             }}
           >
-            <Link
-              href="https://www.linkedin.com/in/hamimc/"
-              target="_blank"
-              passHref
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              <LinkedInIcon
-                sx={{ fontSize: isSmallScreen ? "24px" : "30px" }}
-              />
-            </Link>
-            <Link
-              href="https://github.com/hamim23z"
-              target="_blank"
-              passHref
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              <GitHubIcon sx={{ fontSize: isSmallScreen ? "24px" : "30px" }} />
-            </Link>
-            <Link
-              href="https://drive.google.com/file/d/1zV5BjMJeF9iqVCPEftXepI6VFvgHL0gS/view?usp=sharing"
-              target="_blank"
-              passHref
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              <FileCopyIcon
-                sx={{ fontSize: isSmallScreen ? "24px" : "30px" }}
-              />
-            </Link>
-            <Link
-              href="mailto:hamimc232@gmail.com"
-              target="_blank"
-              passHref
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              <EmailIcon sx={{ fontSize: isSmallScreen ? "24px" : "30px" }} />
-            </Link>
+            Current Projects
+          </Typography>
+          <Box sx={{ width: "100%", py: 2 }}>
+            <CardHighlight />
           </Box>
         </Box>
 
-        {/* right side of screen */}
-        <Box
-          sx={{
-            width: isMobile ? "100%" : "65%",
-            marginLeft: isMobile ? 0 : "35%",
-            height: isMobile ? "auto" : "100vh",
-            overflowY: "auto",
-            padding: isSmallScreen ? 2 : 2,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: isSmallScreen ? 3 : 4,
-            paddingTop: isMobile ? "20px" : "120px",
-          }}
-        >
-          <Box sx={{ width: "100%", maxWidth: "800px" }}>
-            <Typography
-              variant={isSmallScreen ? "h6" : "h5"}
-              sx={{
-                fontWeight: 700,
-                paddingBottom: isSmallScreen ? "20px" : "40px",
-                textAlign: "center",
-              }}
-            >
-              Current Projects
-            </Typography>
-            <Box
-              sx={{
-                minHeight: isSmallScreen ? "200px" : "300px",
-                width: "100%",
-                maxWidth: "800px",
-              }}
-            >
-              <CardHighlight />
-            </Box>
-          </Box>
-
-          <Typography
-            variant={isSmallScreen ? "h6" : "h5"}
-            sx={{
-              fontWeight: 700,
-              textAlign: "center",
-            }}
-          >
+        {/* Experience */}
+        <Box sx={{ width: "100%", maxWidth: "900px", mb: 4 }}>
+          <Typography variant="h5" sx={{ fontWeight: 700, textAlign: "center", color: "#fff", pb: 2 }}>
             Professional Experience
           </Typography>
-          <Box sx={{ width: "100%", maxWidth: "800px" }}>
-            <CardExperience />
-          </Box>
+          <CardExperience />
+        </Box>
 
-          <Typography
-            variant={isSmallScreen ? "h6" : "h5"}
-            sx={{
-              fontWeight: 700,
-              textAlign: "center",
-            }}
-          >
+        {/* Personal Projects */}
+        <Box sx={{ width: "100%", maxWidth: "900px", mb: 4 }}>
+          <Typography variant="h5" sx={{ fontWeight: 700, textAlign: "center", color: "#fff", pb: 2 }}>
             Personal Projects
           </Typography>
-          <Box sx={{ width: "100%", maxWidth: "800px" }}>
-            <CardBlog />
-          </Box>
+          <CardBlog />
+        </Box>
 
+        {/* Tech Stack */}
+        <Box sx={{ width: "100%", maxWidth: "900px", mb: 2 }}>
           <Typography
-            variant={isSmallScreen ? "h6" : "h5"}
+            variant="h5"
             sx={{
               fontWeight: 700,
               textAlign: "center",
-              paddingTop: "40px",
+              color: "#fff",
+              pt: 3,
+              pb: 2,
             }}
           >
             Tech Stack
@@ -263,10 +205,11 @@ export default function HomePage() {
           <TechStack />
           <TechStack2 />
           <TechStack3 />
-
-          {isMobile && <Box sx={{ height: "40px" }}></Box>}
         </Box>
+
+        {/* Spacer for Mobile */}
+        {isMobile && <Box sx={{ height: "40px" }} />}
       </Box>
-    </>
+    </Box>
   );
 }
