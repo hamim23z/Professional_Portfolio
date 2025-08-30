@@ -1,10 +1,5 @@
 "use client";
-import {
-  Box,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 import { CardHighlight } from "./components/CardHighlight";
@@ -21,6 +16,7 @@ import { TechStack3 } from "./components/TechStack3";
 export default function HomePage() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const isLaptop = useMediaQuery(theme.breakpoints.between("sm", "lg"));
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
@@ -36,18 +32,22 @@ export default function HomePage() {
         {/* left side of screen */}
         <Box
           sx={{
-            width: isMobile ? "100%" : "35%",
-            position: isMobile ? "static" : "fixed",
-            height: isMobile ? "auto" : "100vh",
+            width: isSmallScreen ? "100%" : isLaptop ? "420px" : "35%",
+            position: isSmallScreen ? "static" : "fixed",
+            height: isSmallScreen ? "auto" : "100vh",
             display: "flex",
             flexDirection: "column",
-            justifyContent: isMobile ? "flex-start" : "center",
+            justifyContent: isSmallScreen
+              ? "flex-start"
+              : isLaptop
+              ? "flex-start"
+              : "center",
             alignItems: "center",
             textAlign: "center",
-            padding: isMobile ? 2 : 4,
+            padding: isSmallScreen ? 2 : 4,
             zIndex: 1,
-            paddingTop: isMobile ? "100px" : "inherit",
-            paddingBottom: isMobile ? "40px" : "inherit",
+            paddingTop: isSmallScreen ? "100px" : isLaptop ? "80px" : "inherit",
+            paddingBottom: isSmallScreen ? "40px" : "inherit",
           }}
         >
           <Box
