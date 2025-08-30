@@ -27,7 +27,7 @@ export default function HomePage() {
         bgcolor: "#090807",
       }}
     >
-      {/* Left Section / Sidebar */}
+      {/* left */}
       <Box
         sx={{
           flex: { xs: "none", md: "0 0 380px" },
@@ -56,7 +56,7 @@ export default function HomePage() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            height: { xs: "180px", sm: "300px" },
+            height: { xs: "230px", sm: "300px" },
             width: "100%",
             maxWidth: "280px",
             borderRadius: 3,
@@ -101,7 +101,8 @@ export default function HomePage() {
               fontSize: { xs: "0.8rem", md: "1rem" },
             }}
           >
-            A software engineer with a passion to develop projects, big or small.
+            A software engineer with a passion to develop projects, big or
+            small.
           </Typography>
         </Box>
 
@@ -120,7 +121,10 @@ export default function HomePage() {
             color: "#e0e0e0",
           }}
         >
-          Hi! I&apos;m Hamim Choudhury, a Computer Science student at The City College of New York. My coding journey began with MIT's Scratch and evolved through building websites to full-stack engineering. I love projects that solve real-world problems and get used daily.
+          Hi! I&apos;m Hamim Choudhury, a Computer Science student at The City
+          College of New York. My coding journey began with MIT&apos;s Scratch
+          and evolved through building websites to full-stack engineering. I
+          love projects that solve real-world problems and get used daily.
         </Typography>
         <Stack direction="row" spacing={2} justifyContent="center" mb={2}>
           <Link href="https://www.linkedin.com/in/hamimc/" target="_blank">
@@ -129,7 +133,10 @@ export default function HomePage() {
           <Link href="https://github.com/hamim23z" target="_blank">
             <GitHubIcon sx={{ fontSize: 28, color: "#fff" }} />
           </Link>
-          <Link href="https://drive.google.com/file/d/1zV5BjMJeF9iqVCPEftXepI6VFvgHL0gS/view?usp=sharing" target="_blank">
+          <Link
+            href="https://drive.google.com/file/d/1zV5BjMJeF9iqVCPEftXepI6VFvgHL0gS/view?usp=sharing"
+            target="_blank"
+          >
             <FileCopyIcon sx={{ fontSize: 28, color: "#fff" }} />
           </Link>
           <Link href="mailto:hamimc232@gmail.com" target="_blank">
@@ -138,12 +145,12 @@ export default function HomePage() {
         </Stack>
       </Box>
 
-      {/* Main Content */}
+      {/* main */}
       <Box
         sx={{
           flex: 1,
-          ml: { xs: 0, md: "420px" }, // Match the max width of left sidebar
-          width: { xs: "100%", md: "calc(100vw - 420px)" }, // Use remaining viewport width
+          ml: { xs: 0, md: "420px" },
+          width: { xs: "100%", md: "calc(100vw - 420px)" },
           bgcolor: "#11100e",
           minHeight: "100vh",
           p: { xs: 2, md: 6 },
@@ -153,7 +160,7 @@ export default function HomePage() {
           overflowY: "auto",
         }}
       >
-        {/* Projects Section */}
+        {/* personal projects */}
         <Box sx={{ width: "100%", maxWidth: "900px", mb: 4 }}>
           <Typography
             variant="h5"
@@ -172,23 +179,29 @@ export default function HomePage() {
           </Box>
         </Box>
 
-        {/* Experience */}
+        {/* work and internship experience */}
         <Box sx={{ width: "100%", maxWidth: "900px", mb: 4 }}>
-          <Typography variant="h5" sx={{ fontWeight: 700, textAlign: "center", color: "#fff", pb: 2 }}>
+          <Typography
+            variant="h5"
+            sx={{ fontWeight: 700, textAlign: "center", color: "#fff", pb: 2 }}
+          >
             Professional Experience
           </Typography>
           <CardExperience />
         </Box>
 
-        {/* Personal Projects */}
+        {/* personal projects */}
         <Box sx={{ width: "100%", maxWidth: "900px", mb: 4 }}>
-          <Typography variant="h5" sx={{ fontWeight: 700, textAlign: "center", color: "#fff", pb: 2 }}>
+          <Typography
+            variant="h5"
+            sx={{ fontWeight: 700, textAlign: "center", color: "#fff", pb: 2 }}
+          >
             Personal Projects
           </Typography>
           <CardBlog />
         </Box>
 
-        {/* Tech Stack */}
+        {/* tech Stack */}
         <Box sx={{ width: "100%", maxWidth: "900px", mb: 2 }}>
           <Typography
             variant="h5"
@@ -207,7 +220,7 @@ export default function HomePage() {
           <TechStack3 />
         </Box>
 
-        {/* Spacer for Mobile */}
+        {/* spacer for mobile */}
         {isMobile && <Box sx={{ height: "40px" }} />}
       </Box>
     </Box>
