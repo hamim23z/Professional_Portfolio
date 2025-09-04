@@ -63,9 +63,12 @@ export function CardExperience() {
           <Image
             src="/doris_logo.png"
             alt="DORIS Logo"
-            layout="fill"
-            objectFit="cover"
-            style={{ borderRadius: "100%", paddingTop: "10px" }}
+            fill
+            style={{
+              objectFit: "cover",
+              borderRadius: "100%",
+              paddingTop: "10px",
+            }}
           />
         </CardMedia>
         <CardContent sx={{ fontFamily: "Kanit", flex: 1 }}>
@@ -171,9 +174,12 @@ export function CardExperience() {
           <Image
             src="/nycddc_logo.png"
             alt="DDC Logo"
-            layout="fill"
-            objectFit="cover"
-            style={{ borderRadius: "100%", paddingTop: "10px" }}
+            fill
+            style={{
+              objectFit: "cover",
+              borderRadius: "100%",
+              paddingTop: "10px",
+            }}
           />
         </CardMedia>
         <CardContent sx={{ fontFamily: "Kanit" }}>
@@ -279,9 +285,12 @@ export function CardExperience() {
           <Image
             src="/trademark_logo.png"
             alt="Trademark Logo"
-            layout="fill"
-            objectFit="cover"
-            style={{ borderRadius: "100%", paddingTop: "10px" }}
+            fill
+            style={{
+              objectFit: "cover",
+              borderRadius: "100%",
+              paddingTop: "10px",
+            }}
           />
         </CardMedia>
         <CardContent sx={{ fontFamily: "Kanit" }}>
@@ -386,9 +395,12 @@ export function CardExperience() {
           <Image
             src="/fyllan_logo.png"
             alt="Fyllan Logo"
-            layout="fill"
-            objectFit="cover"
-            style={{ borderRadius: "100%", paddingTop: "10px" }}
+            fill
+            style={{
+              objectFit: "cover",
+              borderRadius: "100%",
+              paddingTop: "10px",
+            }}
           />
         </CardMedia>
         <CardContent sx={{ fontFamily: "Kanit" }}>

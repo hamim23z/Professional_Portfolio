@@ -41,7 +41,7 @@ export function CardExperience() {
             paddingTop: theme.spacing(2),
             maxWidth: 800,
           },
-          mx: "auto"
+          mx: "auto",
         })}
       >
         <CardMedia
@@ -65,9 +65,12 @@ export function CardExperience() {
           <Image
             src="/doris_logo.png"
             alt="DORIS Logo"
-            layout="fill"
-            objectFit="cover"
-            style={{ borderRadius: "100%", paddingTop: "10px" }}
+            fill
+            style={{
+              objectFit: "cover",
+              borderRadius: "100%",
+              paddingTop: "10px",
+            }}
           />
         </CardMedia>
         <CardContent sx={{ fontFamily: "Kanit", flex: 1 }}>
@@ -104,13 +107,14 @@ export function CardExperience() {
               fontFamily: "Kanit",
             }}
           >
-            Developed a Python-based website monitoring system using Docker and Azure,
-            increasing uptime by 15% and reducing false positives by 40% while enabling
-            proactive issue resolution for critical web services. Created a custom script
-            to compress PDF files efficiently, reducing file sizes by 60% and improving
-            performance for web-based document delivery systems. Led a redesign of the
-            internal company website, focusing on user-centric design principles to create
-            a more efficient and visually appealing platform.
+            Developed a Python-based website monitoring system using Docker and
+            Azure, increasing uptime by 15% and reducing false positives by 40%
+            while enabling proactive issue resolution for critical web services.
+            Created a custom script to compress PDF files efficiently, reducing
+            file sizes by 60% and improving performance for web-based document
+            delivery systems. Led a redesign of the internal company website,
+            focusing on user-centric design principles to create a more
+            efficient and visually appealing platform.
           </Typography>
         </CardContent>
       </Card>
@@ -170,9 +174,12 @@ export function CardExperience() {
           <Image
             src="/nycddc_logo.png"
             alt="DDC Logo"
-            layout="fill"
-            objectFit="cover"
-            style={{ borderRadius: "100%", paddingTop: "10px" }}
+            fill
+            style={{
+              objectFit: "cover",
+              borderRadius: "100%",
+              paddingTop: "10px",
+            }}
           />
         </CardMedia>
         <CardContent sx={{ fontFamily: "Kanit" }}>
@@ -276,9 +283,13 @@ export function CardExperience() {
           <Image
             src="/trademark_logo.png"
             alt="Trademark Logo"
-            layout="fill"
-            objectFit="cover"
-            style={{ borderRadius: "100%", paddingTop: "10px" }}
+            l
+            fill
+            style={{
+              objectFit: "cover",
+              borderRadius: "100%",
+              paddingTop: "10px",
+            }}
           />
         </CardMedia>
         <CardContent sx={{ fontFamily: "Kanit" }}>
@@ -382,9 +393,12 @@ export function CardExperience() {
           <Image
             src="/fyllan_logo.png"
             alt="Fyllan Logo"
-            layout="fill"
-            objectFit="cover"
-            style={{ borderRadius: "100%", paddingTop: "10px" }}
+            fill
+            style={{
+              objectFit: "cover",
+              borderRadius: "100%",
+              paddingTop: "10px",
+            }}
           />
         </CardMedia>
         <CardContent sx={{ fontFamily: "Kanit" }}>
