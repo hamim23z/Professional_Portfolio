@@ -129,32 +129,36 @@ export function CardBlog() {
                 },
               })}
             >
-              <CardMedia
-                component="div"
-                sx={(theme) => ({
-                  width: 190,
-                  height: 190,
-                  borderRadius: "50%",
-                  backgroundColor: "#151312",
-                  position: "relative",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexShrink: 0,
-                  [theme.breakpoints.up("md")]: {
-                    marginLeft: "10px",
-                    marginRight: "auto",
-                  },
-                })}
-              >
-                <Image
-                  src={card.image}
-                  alt={card.title}
-                  layout="fill"
-                  objectFit="cover"
-                  style={{ borderRadius: "100%", paddingTop: "10px" }}
-                />
-              </CardMedia>
+<CardMedia
+  component="div"
+  sx={(theme) => ({
+    width: 190,
+    height: 190,
+    borderRadius: "50%",
+    backgroundColor: "#151312",
+    position: "relative",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexShrink: 0,
+    [theme.breakpoints.up("md")]: {
+      marginLeft: "10px",
+      marginRight: "auto",
+    },
+  })}
+>
+  <Image
+    src={card.image}
+    alt={card.title}
+    fill
+    style={{
+      objectFit: "cover",
+      borderRadius: "100%",
+      paddingTop: "10px",
+    }}
+  />
+</CardMedia>
+
               <CardContent sx={{ fontFamily: "Kanit" }}>
                 <Typography
                   variant="subtitle2"

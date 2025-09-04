@@ -158,9 +158,11 @@ const CustomCard = ({
         <Image
           src={cover}
           alt="cover"
-          layout="fill"
-          objectFit="cover"
-          style={{ borderRadius: "1rem" }}
+          fill
+          style={{
+            objectFit: "cover",
+            borderRadius: "1rem",
+          }}
         />
       </CardMediaCover>
       <StyledContent color={color}>
@@ -199,6 +201,7 @@ const CustomCard = ({
     </StyledRoot>
   );
 };
+
 
 export function CardHighlight() {
   const [currentIndex, setCurrentIndex] = useState(0);
