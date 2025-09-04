@@ -64,7 +64,7 @@ export function CardBlog() {
       status: "CURRENT PROJECT - MASSIVE CHANGES IN PLACE",
       link: "https://engrnuity.vercel.app/",
       buttonText: "SITE LIVE NOW",
-      image: "/smart_study_logo.png",
+      image: "/engrnuity_circle.png",
     },
     {
       id: 3,

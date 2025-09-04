@@ -10,7 +10,7 @@ import IconButton from "@mui/material/IconButton";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
-const smart_study_logo = "/smart_study_logo.png";
+const engrnuity_logo = "/engrnuity_circle.png";
 const smart_finder_logo = "/smart_finder_logo.png";
 const robot_logo = "/robot.png";
 const blue_bus_logo = "/blue_bus.png";
@@ -217,8 +217,8 @@ export function CardHighlight() {
       color: "#111",
       brand: "Personal Project",
       date: "Currently Working On",
-      cover: smart_study_logo,
-      logo: smart_study_logo,
+      cover: engrnuity_logo,
+      logo: engrnuity_logo,
       title: <>Engrnuity</>,
       description:
         "A website for engineering students from all over the world to study and find resources all in one place. Videos, quizzes, flashcards, worksheets, etc are all available.",
