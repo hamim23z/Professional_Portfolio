@@ -44,9 +44,45 @@ export function CardBlog() {
   const cards = [
     {
       id: 1,
+      title: "Engrnuity",
+      description:
+        "Engrnuity is a web based application that serves as a study website strictly for engineering students who go to CUNY colleges in New York. Users will be able to create flashcards, generate cards using AI, watch videos, take quizzes, gain access to past exams and textbooks, RateMyProfessor, etc. The waitlist for Engrnuity is live and changes are being made daily!",
+      technologies:
+        "Next.js, Node.js, React.js, Javascript, Typescript, PostgreSQL, Firebase, Material UI, Next Auth",
+      status: "CURRENT PROJECT - MASSIVE CHANGES IN PLACE",
+      link: "https://engrnuity.vercel.app/",
+      buttonText: "SITE LIVE NOW",
+      image: "/engrnuity_circle.png",
+    },
+    {
+      id: 2,
+      title: "Ertan Eats",
+      description:
+        "A lot of people know him. Some people may not know him. @newyorkturk on Instagram, TikTok, and YouTube. He is an influencer who goes to different fine dining, regular dining, and Michelin star restaurants all across the city. This website is designed to keep track of where he eats, what he orders, ratings, etc. All in one centralized location for his fan base.",
+      technologies:
+        "Next.js, Node.js, React.js, Javascript, Typescript, Supabase, Material UI",
+      status: "CURRENT PROJECT",
+      link: "/",
+      buttonText: "COMING SOON",
+      image: "/nyturk.jpg",
+    },
+    {
+      id: 3,
+      title: "NBA Championship Predictor",
+      description:
+        "Using a Kaggle Dataset of all the past NBA Championships, I altered it to also get the Eastern and Western Conference champions and then used Machine Learning to get the next 25 NBA Champions. I used the Random Forest classifier as well as Jupyter Notebooks. This is a very basic implementation so there will be a part two with much more detail. ",
+      technologies:
+        "Python3, Panda, NumPy, Random Forest, Scikit, Jupyter Notebooks",
+      status: "COMPLETED - SEP 2025",
+      link: "https://github.com/hamim23z/NBA-Championship-Predictor",
+      buttonText: "LIVE ON GITHUB",
+      image: "/nbalogo.png",
+    },
+    {
+      id: 4,
       title: "Smart Finder",
       description:
-        "Smart Finder is a project that I am currently working on with other people. The purpose of this project is to serve as a map based, geolocation website for delis and bodegas. Within a certain radius, users will be able to see different stores and the sandwich prices there. They will be able to leave photos, reviews, and have access to deals too! Plenty of more features available as well.",
+        "The purpose of this project is to serve as a map based, geolocation website for delis and bodegas. Within a certain radius, users will be able to see different stores and the sandwich prices there. They will be able to leave photos, reviews, and have access to deals too! Plenty of more features available as well.",
       technologies:
         "Next.js, Node.js, React, Javascript, Material UI, Docker, MySQL, Google APIs, OpenAI, Stack Auth",
       status: "CURRENT PROJECT",
@@ -55,36 +91,12 @@ export function CardBlog() {
       image: "/smart_finder_logo.png",
     },
     {
-      id: 2,
-      title: "Engrnuity",
-      description:
-        "Engrnuity is a web based application that serves as a study website strictly for engineering students. Users will be able to create flashcards, generate cards using AI, watch videos, take quizzes, and much more. The waitlist for Engrnuity is live and changes are being made daily!",
-      technologies:
-        "Next.js, Node.js, React, Javascript, Material UI, Firebase, Stack Auth",
-      status: "CURRENT PROJECT - MASSIVE CHANGES IN PLACE",
-      link: "https://engrnuity.vercel.app/",
-      buttonText: "SITE LIVE NOW",
-      image: "/engrnuity_circle.png",
-    },
-    {
-      id: 3,
-      title: "Smart Translate",
-      description:
-        "Smart Translate is a project that I began working on recently. The purpose of this project is to serve as a translation website for text and videos. Users will be able to enter text or a video link and then select a language for it to be translated. The site is now live, with the translation ready and the video translate in development.",
-      technologies:
-        "Next.js, Node.js, React, Javascript, Material UI, Open AI, Google Translate API",
-      status: "PROJECT ON HOLD FOR NOW",
-      link: "https://smarttranslatehub.vercel.app/",
-      buttonText: "SITE LIVE NOW",
-      image: "/smart_translate_logo.png",
-    },
-    {
-      id: 4,
+      id: 5,
       title: "Blizzard Bot",
       description:
         "Blizzard Bot is a Discord based bot that I worked on early 2023 very frequently. The purpose of this project was to allow users in Discord servers to convert shoe sizes, check websites for bot security, give information about which companies are the best for botting, and provide raffle links to certain sneakers. This garnished hundreds of users daily. ",
       technologies: "Python, Discord.py",
-      status: "January 2023",
+      status: "COMPLETED - JAN 2023",
       link: "https://github.com/hamim23z/BlizzardBot1",
       buttonText: "GITHUB REPO",
       image: "/blizzardbot_logo.png",
@@ -129,35 +141,35 @@ export function CardBlog() {
                 },
               })}
             >
-<CardMedia
-  component="div"
-  sx={(theme) => ({
-    width: 190,
-    height: 190,
-    borderRadius: "50%",
-    backgroundColor: "#151312",
-    position: "relative",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexShrink: 0,
-    [theme.breakpoints.up("md")]: {
-      marginLeft: "10px",
-      marginRight: "auto",
-    },
-  })}
->
-  <Image
-    src={card.image}
-    alt={card.title}
-    fill
-    style={{
-      objectFit: "cover",
-      borderRadius: "100%",
-      paddingTop: "10px",
-    }}
-  />
-</CardMedia>
+              <CardMedia
+                component="div"
+                sx={(theme) => ({
+                  width: 190,
+                  height: 190,
+                  borderRadius: "50%",
+                  backgroundColor: "#151312",
+                  position: "relative",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexShrink: 0,
+                  [theme.breakpoints.up("md")]: {
+                    marginLeft: "10px",
+                    marginRight: "auto",
+                  },
+                })}
+              >
+                <Image
+                  src={card.image}
+                  alt={card.title}
+                  fill
+                  style={{
+                    objectFit: "cover",
+                    borderRadius: "100%",
+                    paddingTop: "10px",
+                  }}
+                />
+              </CardMedia>
 
               <CardContent sx={{ fontFamily: "Kanit" }}>
                 <Typography
