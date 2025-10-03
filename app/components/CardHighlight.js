@@ -12,7 +12,6 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const engrnuity_logo = "/engrnuity_circle.png";
 const smart_finder_logo = "/smart_finder_logo.png";
-const robot_logo = "/robot.png";
 const blue_bus_logo = "/blue_bus.png";
 
 const defaultColor = "#747f84";
@@ -202,20 +201,9 @@ const CustomCard = ({
   );
 };
 
-
 export function CardHighlight() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const cards = [
-    {
-      color: "#111",
-      brand: "Personal Project",
-      date: "Currently Working On",
-      cover: robot_logo,
-      logo: robot_logo,
-      title: <>AI Projects + LLM&apos;s</>,
-      description:
-        "Building AI applications and experimenting with large language models to solve real-world problems. Currently 4 different projects.",
-    },
     {
       color: "#111",
       brand: "Personal Project",
@@ -224,7 +212,7 @@ export function CardHighlight() {
       logo: engrnuity_logo,
       title: <>Engrnuity</>,
       description:
-        "A website for engineering students from all over the world to study and find resources all in one place. Videos, quizzes, flashcards, worksheets, etc are all available.",
+        "A website for engineering students in New Yor, specifically CUNY students to study and find resources all in one place. Designed to save time and serve as an alternative to Quizlet, Chegg, and Studocu. Gain access to flashcards, videos, past exams, etc.",
     },
     {
       color: "#111",
@@ -234,7 +222,7 @@ export function CardHighlight() {
       logo: smart_finder_logo,
       title: <>Smart Finder</>,
       description:
-        "A smart search tool that will help New Yorkers find the best rated and low price sandwich from their local bodega. For the city that never sleeps, a quick bite is what we all need sometimes.",
+        "A website for the every day New Yorker. We really are the city that never sleeps. So why not grab a quick bite to eat at the nearest deli or bodega? Gain access to menu items, prices, reviews, and photos. All so you can enjoy the best sandwich.",
     },
     {
       color: "#111",
@@ -242,9 +230,9 @@ export function CardHighlight() {
       date: "Currently Working On",
       cover: blue_bus_logo,
       logo: blue_bus_logo,
-      title: <>NYC Meter Mind</>,
+      title: <>Meter Mind</>,
       description:
-        "An website that will help New Yorkers know where and when they can park in case they want to plan a trip in advance or just forget what the rules are that day.",
+        "Finding parking sucks in New York City. Too many rules, too many headaches; no parking anytime, street cleaning, trucks only, etc. Why not have it all in one central hub. Get your location and find all the rules and signs nearest to you. Easy to read. Easy to understand.",
     },
   ];
 
