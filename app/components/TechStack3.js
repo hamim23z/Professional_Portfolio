@@ -8,6 +8,7 @@ import {
   SiAuth0,
   SiGit,
   SiMui,
+  SiSupabase
 } from "react-icons/si";
 
 export function TechStack3() {
@@ -18,6 +19,7 @@ export function TechStack3() {
     { name: "Firebase", icon: <SiFirebase size={40} />, color: "#FFCA28" },
     { name: "Auth0", icon: <SiAuth0 size={40} />, color: "#fff" },
     { name: "Git", icon: <SiGit size={40} />, color: "#F05033" },
+    { name: "Supabase", icon: <SiSupabase size={40} />, color: "#197437ff" },
   ];
 
   return (

@@ -61,9 +61,9 @@ export function CardBlog() {
         "A lot of people know him. Some people may not know him. @newyorkturk on Instagram, TikTok, and YouTube. He is an influencer who goes to different fine dining, regular dining, and Michelin star restaurants all across the city. This website is designed to keep track of where he eats, what he orders, ratings, etc. All in one centralized location for his fan base.",
       technologies:
         "Next.js, Node.js, React.js, Javascript, Typescript, Supabase, Material UI",
-      status: "CURRENT PROJECT",
-      link: "/",
-      buttonText: "COMING SOON",
+      status: "COMPLETED - OCT 2025",
+      link: "https://ertaneats.vercel.app/",
+      buttonText: "SITE LIVE NOW",
       image: "/nyturk.jpg",
     },
     {
@@ -85,9 +85,9 @@ export function CardBlog() {
         "The purpose of this project is to serve as a map based, geolocation website for delis and bodegas. Within a certain radius, users will be able to see different stores and the sandwich prices there. They will be able to leave photos, reviews, and have access to deals too! Plenty of more features available as well.",
       technologies:
         "Next.js, Node.js, React, Javascript, Material UI, Docker, MySQL, Google APIs, OpenAI, Stack Auth",
-      status: "CURRENT PROJECT",
+      status: "DELAYED",
       link: "/",
-      buttonText: "COMING SOON",
+      buttonText: "DELAYED",
       image: "/smart_finder_logo.png",
     },
     {

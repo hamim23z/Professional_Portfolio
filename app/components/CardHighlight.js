@@ -218,16 +218,6 @@ export function CardHighlight() {
       color: "#111",
       brand: "Personal Project",
       date: "Currently Working On",
-      cover: smart_finder_logo,
-      logo: smart_finder_logo,
-      title: <>Smart Finder</>,
-      description:
-        "A website for the every day New Yorker. We really are the city that never sleeps. So why not grab a quick bite to eat at the nearest deli or bodega? Gain access to menu items, prices, reviews, and photos. All so you can enjoy the best sandwich.",
-    },
-    {
-      color: "#111",
-      brand: "Personal Project",
-      date: "Currently Working On",
       cover: blue_bus_logo,
       logo: blue_bus_logo,
       title: <>Meter Mind</>,
