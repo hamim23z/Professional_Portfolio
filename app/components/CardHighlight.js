@@ -13,6 +13,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const engrnuity_logo = "/engrnuity_circle.png";
 const smart_finder_logo = "/smart_finder_logo.png";
 const blue_bus_logo = "/blue_bus.png";
+const finance_logo = "/finance.png";
 
 const defaultColor = "#747f84";
 const StyledRoot = styled("div")(({ color = defaultColor }) => ({
@@ -213,6 +214,16 @@ export function CardHighlight() {
       title: <>Engrnuity</>,
       description:
         "A website for engineering students in New Yor, specifically CUNY students to study and find resources all in one place. Designed to save time and serve as an alternative to Quizlet, Chegg, and Studocu. Gain access to flashcards, videos, past exams, etc.",
+    },
+    {
+      color: "#111",
+      brand: "Personal Project",
+      date: "Currently Working On",
+      cover: finance_logo,
+      logo: finance_logo,
+      title: <>FinTrack</>,
+      description:
+        "Managing your money isn’t always easy. Expenses pile up, it’s hard to remember what you spent where, and tracking it all can be confusing. FinTrack puts everything in one place. See all your expenses, filter your spending by category, and get a clear view of your money with a pie chart. Stay on top of your finances without the extra headache.",
     },
     {
       color: "#111",

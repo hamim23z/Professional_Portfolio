@@ -7,13 +7,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FileCopyIcon from "@mui/icons-material/FileCopy";
 import EmailIcon from "@mui/icons-material/Email";
+import BarChartIcon from "@mui/icons-material/BarChart";
 import { CardExperience } from "./components/CardExperience";
 import { CardBlog } from "./components/CardBlog";
 import { TechStack } from "./components/TechStack";
 import { TechStack2 } from "./components/TechStack2";
 import { TechStack3 } from "./components/TechStack3";
 
-// Use MUI's responsive system for breakpoints
 export default function HomePage() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -132,6 +132,9 @@ export default function HomePage() {
           </Link>
           <Link href="https://github.com/hamim23z" target="_blank">
             <GitHubIcon sx={{ fontSize: 28, color: "#fff" }} />
+          </Link>
+          <Link href="https://www.kaggle.com/hamimc" target="_blank">
+            <BarChartIcon sx={{ fontSize: 28, color: "#fff" }} />
           </Link>
           <Link
             href="https://drive.google.com/file/d/1JwaPXfndKw6YfcYBh39pwwihzY7ygxq5/view?usp=sharing"
