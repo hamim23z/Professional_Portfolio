@@ -219,16 +219,6 @@ export function CardHighlight() {
       color: "#111",
       brand: "Personal Project",
       date: "Currently Working On",
-      cover: finance_logo,
-      logo: finance_logo,
-      title: <>FinTrack</>,
-      description:
-        "Managing your money isn’t always easy. Expenses pile up, it’s hard to remember what you spent where, and tracking it all can be confusing. FinTrack puts everything in one place. See all your expenses, filter your spending by category, and get a clear view of your money with a pie chart. Stay on top of your finances without the extra headache.",
-    },
-    {
-      color: "#111",
-      brand: "Personal Project",
-      date: "Currently Working On",
       cover: blue_bus_logo,
       logo: blue_bus_logo,
       title: <>Meter Mind</>,

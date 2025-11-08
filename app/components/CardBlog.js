@@ -56,6 +56,18 @@ export function CardBlog() {
     },
     {
       id: 2,
+      title: "FinTrack",
+      description:
+        "Managing your money isn’t always easy. Expenses pile up, it’s hard to remember what you spent where, and tracking it all can be confusing. FinTrack puts everything in one place. See all your expenses, filter your spending by category, and get a clear view of your money with a pie chart. Stay on top of your finances without the extra headache.",
+      technologies:
+        "Python, Flask, HTML, Tailwind CSS, Jinja, Chart.js, SQLite",
+      status: "COMPLETED - NOV 2025",
+      link: "https://github.com/hamim23z/FinTrack",
+      buttonText: "LIVE ON GITHUB",
+      image: "/finance.png",
+    },
+    {
+      id: 3,
       title: "Ertan Eats",
       description:
         "A lot of people know him. Some people may not know him. @newyorkturk on Instagram, TikTok, and YouTube. He is an influencer who goes to different fine dining, regular dining, and Michelin star restaurants all across the city. This website is designed to keep track of where he eats, what he orders, ratings, etc. All in one centralized location for his fan base.",
@@ -67,7 +79,7 @@ export function CardBlog() {
       image: "/nyturk.jpg",
     },
     {
-      id: 3,
+      id: 4,
       title: "NBA Championship Predictor",
       description:
         "Using a Kaggle Dataset of all the past NBA Championships, I altered it to also get the Eastern and Western Conference champions and then used Machine Learning to get the next 25 NBA Champions. I used the Random Forest classifier as well as Jupyter Notebooks. This is a very basic implementation so there will be a part two with much more detail. ",
@@ -79,7 +91,7 @@ export function CardBlog() {
       image: "/nbalogo.png",
     },
     {
-      id: 4,
+      id: 5,
       title: "Smart Finder",
       description:
         "The purpose of this project is to serve as a map based, geolocation website for delis and bodegas. Within a certain radius, users will be able to see different stores and the sandwich prices there. They will be able to leave photos, reviews, and have access to deals too! Plenty of more features available as well.",
@@ -91,7 +103,7 @@ export function CardBlog() {
       image: "/smart_finder_logo.png",
     },
     {
-      id: 5,
+      id: 6,
       title: "Blizzard Bot",
       description:
         "Blizzard Bot is a Discord based bot that I worked on early 2023 very frequently. The purpose of this project was to allow users in Discord servers to convert shoe sizes, check websites for bot security, give information about which companies are the best for botting, and provide raffle links to certain sneakers. This garnished hundreds of users daily. ",
