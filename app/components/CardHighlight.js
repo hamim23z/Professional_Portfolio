@@ -11,9 +11,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const engrnuity_logo = "/engrnuity_circle.png";
-const smart_finder_logo = "/smart_finder_logo.png";
-const blue_bus_logo = "/blue_bus.png";
-const finance_logo = "/finance.png";
+const pricepoint_logo = "/house_sold.png";
 
 const defaultColor = "#747f84";
 const StyledRoot = styled("div")(({ color = defaultColor }) => ({
@@ -213,17 +211,17 @@ export function CardHighlight() {
       logo: engrnuity_logo,
       title: <>Engrnuity</>,
       description:
-        "A website for engineering students in New Yor, specifically CUNY students to study and find resources all in one place. Designed to save time and serve as an alternative to Quizlet, Chegg, and Studocu. Gain access to flashcards, videos, past exams, etc.",
+        "A website for engineering students in New York, specifically CUNY students to study and find resources all in one place. Designed to save time and serve as an alternative to Quizlet, Chegg, and Studocu. Gain access to flashcards, videos, past exams, etc.",
     },
     {
       color: "#111",
       brand: "Personal Project",
       date: "Currently Working On",
-      cover: blue_bus_logo,
-      logo: blue_bus_logo,
-      title: <>Meter Mind</>,
+      cover: pricepoint_logo,
+      logo: pricepoint_logo,
+      title: <>PricePoint</>,
       description:
-        "Finding parking sucks in New York City. Too many rules, too many headaches; no parking anytime, street cleaning, trucks only, etc. Why not have it all in one central hub. Get your location and find all the rules and signs nearest to you. Easy to read. Easy to understand.",
+        "A ML powered tool that helps users estimate property prices based on key features such as number of rooms, parking, size, and location related attributes. This uses a Kaggle dataset to train and evaluate models and then the the results are achieved via a CLI.   ",
     },
   ];
 
