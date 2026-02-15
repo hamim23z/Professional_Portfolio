@@ -61,6 +61,105 @@ export function CardExperience() {
           })}
         >
           <Image
+            src="/bloomenergy_logo.png"
+            alt=""
+            fill
+            style={{
+              objectFit: "cover",
+              borderRadius: "100%",
+              paddingTop: "10px",
+            }}
+          />
+        </CardMedia>
+        <CardContent sx={{ fontFamily: "Kanit", flex: 1 }}>
+          <Typography
+            variant="subtitle2"
+            color="#fff"
+            sx={{
+              textTransform: "uppercase",
+              letterSpacing: "1px",
+              fontSize: 12,
+              marginBottom: "0.875em",
+            }}
+          >
+            Bloom Energy | June 2026 - August 2026
+          </Typography>
+
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: "900",
+              marginBottom: "0.35em",
+              fontFamily: "Kanit",
+            }}
+          >
+            Incoming Systems Engineer Intern
+          </Typography>
+
+          <Typography
+            variant="body2"
+            sx={{
+              marginBottom: 2,
+              fontSize: "0.8rem",
+              letterSpacing: "0.00938em",
+              fontFamily: "Kanit",
+            }}
+          ></Typography>
+        </CardContent>
+      </Card>
+
+      <Card
+        sx={(theme) => ({
+          margin: "auto",
+          marginBottom: theme.spacing(5),
+          borderRadius: theme.spacing(2),
+          transition: "0.3s",
+          position: "relative",
+          maxWidth: "90%",
+          width: "100%",
+          overflow: "initial",
+          background: "#151312",
+          color: "#ffffff",
+          border: "1px solid #ffffff",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          paddingBottom: theme.spacing(2),
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.05)",
+            border: "1px solid #5F409C",
+            [theme.breakpoints.up("md")]: {
+              transform: "scale(1.1)",
+            },
+          },
+          [theme.breakpoints.up("md")]: {
+            flexDirection: "row",
+            paddingTop: theme.spacing(2),
+            maxWidth: 800,
+          },
+          mx: "auto",
+        })}
+      >
+        <CardMedia
+          component="div"
+          sx={(theme) => ({
+            width: 190,
+            height: 190,
+            borderRadius: "50%",
+            backgroundColor: "#151312",
+            position: "relative",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexShrink: 0,
+            [theme.breakpoints.up("md")]: {
+              marginLeft: "10px",
+              marginRight: "auto",
+            },
+          })}
+        >
+          <Image
             src="/doris_logo.png"
             alt="DORIS Logo"
             fill
