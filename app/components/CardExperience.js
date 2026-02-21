@@ -29,7 +29,7 @@ export function CardExperience() {
           transition: "transform 0.4s",
           "&:hover": {
             transform: "scale(1.05)",
-            border: "1px solid #5F409C",
+            border: "1px solid #0eb337",
             [theme.breakpoints.up("md")]: {
               transform: "scale(1.1)",
             },
