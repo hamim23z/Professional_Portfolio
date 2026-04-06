@@ -121,7 +121,7 @@ export default function HomePage() {
             color: "#e0e0e0",
           }}
         >
-          Hi! I&apos;m Hamim Choudhury, a Computer Science student at The City
+          Hi! I&apos;m Hamim Choudhury, a senior Computer Science student at The City
           College of New York. My coding journey began with MIT&apos;s Scratch
           and evolved through building websites to full-stack engineering. I
           love projects that solve real-world problems and get used daily.
@@ -137,7 +137,7 @@ export default function HomePage() {
             <BarChartIcon sx={{ fontSize: 28, color: "#fff" }} />
           </Link>
           <Link
-            href="https://drive.google.com/file/d/1B9jwHdP19D4mDX5eNT67pJ1OAsLRk5Bo/view?usp=sharing"
+            href="https://drive.google.com/file/d/1GRazGC8QYv3fjDiYw4FCzS3YK7L68ceB/view?usp=sharing"
             target="_blank"
           >
             <FileCopyIcon sx={{ fontSize: 28, color: "#fff" }} />
@@ -163,24 +163,6 @@ export default function HomePage() {
           overflowY: "auto",
         }}
       >
-        {/* personal projects */}
-        <Box sx={{ width: "100%", maxWidth: "900px", mb: 4 }}>
-          <Typography
-            variant="h5"
-            sx={{
-              fontWeight: 700,
-              textAlign: "center",
-              pb: 3,
-              color: "#fff",
-              borderBottom: "1px solid #222",
-            }}
-          >
-            Current Projects
-          </Typography>
-          <Box sx={{ width: "100%", py: 2 }}>
-            <CardHighlight />
-          </Box>
-        </Box>
 
         {/* work and internship experience */}
         <Box sx={{ width: "100%", maxWidth: "900px", mb: 4 }}>
