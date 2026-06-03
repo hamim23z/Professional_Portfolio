@@ -44,6 +44,18 @@ export function CardBlog() {
   const cards = [
     {
       id: 1,
+      title: "SpaceSync",
+      description:
+        "SpaceSync is a multi-agent reinforcement learning (MARL) system that simulates collaborative furniture placement in augmented reality environments. SpaceSync explores how specialized AI agents can work together to solve a real-world interior design problem; furnishing a room that balances space efficiency, aesthetic coherence, and budget constraints.",
+      technologies:
+        "Python, PettingZoo, NumPy, MatPlotLib, OpenCV, YoloV8, HuggingFace, Git",
+      status: "COMPLETED - MAY 2026",
+      link: "https://github.com/hamim23z/SpaceSync_v1",
+      buttonText: "LIVE ON GITHUB",
+      image: "/furniture.png",
+    },
+    {
+      id: 2,
       title: "BetterReadMe",
       description:
         "BetterReadMe is a web-based tool designed to help developers create clean, professional, and fully structured README.md files with ease. Whether you're applying for internships, jobs, or documenting projects at work. It simplifies documentation, saves time, and ensures your projects are presented clearly and professionally.",
@@ -55,7 +67,7 @@ export function CardBlog() {
       image: "/coding.png",
     },
     {
-      id: 2,
+      id: 3,
       title: "Personal PDF Chatbot",
       description:
         "MultiPDF is a web-based application that allows users to interact with multiple PDF documents through a conversational interface. It enables users to upload PDFs, ask questions, and receive accurate answers with source citations. The platform uses advanced retrieval techniques to ensure relevant information is surfaced, even across multiple documents.",
@@ -66,7 +78,7 @@ export function CardBlog() {
       image: "/pdf.png",
     },
     {
-      id: 3,
+      id: 4,
       title: "FinTrack",
       description:
         "Managing your money isn’t always easy. Expenses pile up, it’s hard to remember what you spent where, and tracking it all can be confusing. FinTrack puts everything in one place. See all your expenses, filter your spending by category, and get a clear view of your money with a pie chart. Stay on top of your finances without the extra headache.",
@@ -78,7 +90,7 @@ export function CardBlog() {
       image: "/finance.png",
     },
     {
-      id: 4,
+      id: 5,
       title: "Engrnuity",
       description:
         "Engrnuity is a web based application that serves as a study website strictly for engineering students who go to CUNY colleges in New York. Users will be able to create flashcards, generate cards using AI, watch videos, take quizzes, gain access to past exams and textbooks, RateMyProfessor, etc. The waitlist for Engrnuity is live and changes are being made daily!",
@@ -90,7 +102,7 @@ export function CardBlog() {
       image: "/engrnuity_circle.png",
     },
     {
-      id: 5,
+      id: 6,
       title: "Energy Usage & Building Efficiency",
       description:
         "This project a web-based data visualization platform that analyzes building-level energy consumption across New York City using public datasets. The application allows users to filter and explore the 5 boroughs of NYC through the interactive dashboard and plots. The goal is to help users makeinformed decisions around building operations, purchasing, and policy.",
@@ -102,7 +114,7 @@ export function CardBlog() {
       image: "/electricity_meter.png",
     },
     {
-      id: 6,
+      id: 7,
       title: "Ertan Eats",
       description:
         "A lot of people know him. Some people may not know him. @newyorkturk on Instagram, TikTok, and YouTube. He is an influencer who goes to different fine dining, regular dining, and Michelin star restaurants all across the city. This website is designed to keep track of where he eats, what he orders, ratings, etc. All in one centralized location for his fan base.",
@@ -114,7 +126,7 @@ export function CardBlog() {
       image: "/nyturk.jpg",
     },
     {
-      id: 7,
+      id: 8,
       title: "NBA Championship Predictor",
       description:
         "Using a Kaggle Dataset of all the past NBA Championships, I altered it to also get the Eastern and Western Conference champions and then used Machine Learning to get the next 25 NBA Champions. I used the Random Forest classifier as well as Jupyter Notebooks. This is a very basic implementation so there will be a part two with much more detail. ",
@@ -126,7 +138,7 @@ export function CardBlog() {
       image: "/nbalogo.png",
     },
     {
-      id: 8,
+      id: 9,
       title: "Smart Finder",
       description:
         "The purpose of this project is to serve as a map based, geolocation website for delis and bodegas. Within a certain radius, users will be able to see different stores and the sandwich prices there. They will be able to leave photos, reviews, and have access to deals too! Plenty of more features available as well.",
@@ -138,7 +150,7 @@ export function CardBlog() {
       image: "/smart_finder_logo.png",
     },
     {
-      id: 9,
+      id: 10,
       title: "Blizzard Bot",
       description:
         "Blizzard Bot is a Discord based bot that I worked on early 2023 very frequently. The purpose of this project was to allow users in Discord servers to convert shoe sizes, check websites for bot security, give information about which companies are the best for botting, and provide raffle links to certain sneakers. This garnished hundreds of users daily. ",
