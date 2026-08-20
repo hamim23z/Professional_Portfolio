@@ -93,7 +93,7 @@ export function CardExperience() {
               fontFamily: "Kanit",
             }}
           >
-            Incoming Systems Engineer Intern
+            Systems Engineer Intern
           </Typography>
 
           <Typography
@@ -104,7 +104,18 @@ export function CardExperience() {
               letterSpacing: "0.00938em",
               fontFamily: "Kanit",
             }}
-          ></Typography>
+          >
+            Developed an XGBoost machine learning model to predict power gain
+            after system fixes, achieving a ~5 kW MAE and outperforming a linear baseline.
+            Deployed the model through a Next.js and MUI dashboard that ranked
+            systems by predicted power gain, helping guide fixes across 183
+            systems that recovered 2.5 MW in one week. Built a Python script to
+            retrieve and process operational data for 26,000+ systems in under
+            one minute, replacing a 5–7 minute Excel workflow and exporting
+            results to CSV. Created a power trend analysis tool to compare
+            current and historical system output, allowing engineers to track
+            performance changes over time.
+          </Typography>
         </CardContent>
       </Card>
 
