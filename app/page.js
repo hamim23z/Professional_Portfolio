@@ -138,7 +138,7 @@ export default function HomePage() {
             <BarChartIcon sx={{ fontSize: 28, color: "#fff" }} />
           </Link>
           <Link
-            href="https://drive.google.com/file/d/1nUuQKbY0Zq5YcZYxji6ZKfflVgoE5CRw/view?usp=sharing"
+            href="https://drive.google.com/file/d/1l2zmyu3b4--rz0uJWehdmRQ0qsN4yJqJ/view?usp=sharing"
             target="_blank"
           >
             <FileCopyIcon sx={{ fontSize: 28, color: "#fff" }} />
