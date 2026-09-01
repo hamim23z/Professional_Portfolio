@@ -2,18 +2,16 @@
 import React from "react";
 import { Box, Grid, Typography, Paper } from "@mui/material";
 import {
-  SiMysql,
-  SiFirebase,
   SiOpenai,
   SiGit,
-  SiSupabase
+  SiSupabase,
+  SiClaude
 } from "react-icons/si";
 
 export function TechStack3() {
   const techStack = [
-    { name: "mySQL", icon: <SiMysql size={40} />, color: "#4479A1" },
     { name: "OpenAI", icon: <SiOpenai size={40} />, color: "#412991" },
-    { name: "Firebase", icon: <SiFirebase size={40} />, color: "#FFCA28" },
+    { name: "Claude", icon: <SiClaude size={40} />, color: "#412991" },
     { name: "Git", icon: <SiGit size={40} />, color: "#F05033" },
     { name: "Supabase", icon: <SiSupabase size={40} />, color: "#197437ff" },
   ];

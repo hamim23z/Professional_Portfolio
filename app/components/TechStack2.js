@@ -6,16 +6,18 @@ import {
   SiNodedotjs,
   SiHtml5,
   SiCss3,
-  SiMongodb,
+  SiReact,
+  SiFlask,
 } from "react-icons/si";
 
 export function TechStack2() {
   const techStack = [
-    { name: "Next.js", icon: <SiNextdotjs size={40} />, color: "#fff" },
-    { name: "Node.js", icon: <SiNodedotjs size={40} />, color: "#339933" },
-    { name: "MongoDB", icon: <SiMongodb size={40} />, color: "#4FAA41" },
+    { name: "Flask", icon: <SiFlask size={40} />, color: "#fff" },
+    { name: "Next", icon: <SiNextdotjs size={40} />, color: "#fff" },
+    { name: "Node", icon: <SiNodedotjs size={40} />, color: "#339933" },
     { name: "HTML", icon: <SiHtml5 size={40} />, color: "#E34F26" },
     { name: "CSS", icon: <SiCss3 size={40} />, color: "#1572B6" },
+    { name: "React", icon: <SiReact size={40} />, color: "#61DAFB" },
   ];
 
   return (

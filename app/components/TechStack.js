@@ -3,20 +3,21 @@ import React from "react";
 import { Box, Grid, Typography, Paper } from "@mui/material";
 import {
   SiDocker,
-  SiFlask,
+  SiMysql,
   SiJavascript,
-  SiReact,
   SiPython,
+  SiPandas,
+  SiScikitlearn
 } from "react-icons/si";
-import { FaCoffee } from "react-icons/fa";
 
 export function TechStack() {
   const techStack = [
     { name: "Python", icon: <SiPython size={40} />, color: "#306998" },
-    { name: "JS", icon: <SiJavascript size={40} />, color: "#F7DF1E" },
+    { name: "Pandas", icon: <SiPandas size={40} />, color: "#094c83eb" },
+    { name: "Scikit", icon: <SiScikitlearn size={40} />, color: "#cd8615eb" },
+    { name: "SQL", icon: <SiMysql size={40} />, color: "#4479A1" },
     { name: "Docker", icon: <SiDocker size={40} />, color: "#2496ED" },
-    { name: "Flask", icon: <SiFlask size={40} />, color: "#fff" },
-    { name: "React", icon: <SiReact size={40} />, color: "#61DAFB" },
+    { name: "JS/TS", icon: <SiJavascript size={40} />, color: "#F7DF1E" },
   ];
 
   return (
