@@ -121,10 +121,11 @@ export default function HomePage() {
             color: "#e0e0e0",
           }}
         >
-          Hi! I&apos;m Hamim Choudhury, a senior Computer Science student at The City
-          College of New York. My coding journey began with MIT&apos;s Scratch
-          and evolved through building websites to full-stack engineering. I
-          love projects that solve real-world problems and get used daily.
+          Hi! I&apos;m Hamim Choudhury, a current senior at The City
+          College of New York pursuing a BS in Computer Science. 
+          My coding journey began with MIT&apos;s Scratch
+          and evolved through building simple websites to algorithms to models. I
+          love coding and solving issues that people face on a daily basis.
         </Typography>
         <Stack direction="row" spacing={2} justifyContent="center" mb={2}>
           <Link href="https://www.linkedin.com/in/hamimc/" target="_blank">
