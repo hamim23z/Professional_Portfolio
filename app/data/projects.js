@@ -10,6 +10,19 @@ export const categories = [
 
 export const projects = [
   {
+    id: "ballistic",
+    title: "Ballistic",
+    category: "ml",
+    status: "current",
+    date: "October 2026",
+    description:
+      "Ballistic is a full-stack NBA season simulator where you draft players from any era, from a five-man lineup chasing a perfect 82-0 season to a full 12-man roster that plays out a whole season and playoffs. It's built with Next.js, Tailwind and Framer Motion on the front end, with a Supabase Postgres database of historical player stats going back to the 1960s, merged by franchise. A statistical model estimates team strength and Monte Carlo simulation produces records, title odds and the chance of going undefeated.",
+    tech: ["Python", "TS", "PostgreSQL", "ML", "Docker", "Kaggle"],
+    link: "https://github.com/hamim23z/Ballistic",
+    linkType: "github",
+    image: "/basketball.png",
+  },
+  {
     id: "spacesync",
     title: "SpaceSync",
     category: "ml",
@@ -65,8 +78,8 @@ export const projects = [
     id: "engrnuity",
     title: "Engrnuity",
     category: "web",
-    status: "current",
-    date: "Ongoing",
+    status: "paused",
+    date: "paused",
     description:
       "Engrnuity is a web based application that serves as a study website strictly for engineering students who go to CUNY colleges in New York. Users will be able to create flashcards, generate cards using AI, watch videos, take quizzes, gain access to past exams and textbooks, RateMyProfessor, etc. The waitlist for Engrnuity is live and changes are being made daily!",
     tech: ["Next.js", "Node.js", "React.js", "JavaScript", "TypeScript", "PostgreSQL", "Firebase", "Material UI", "Next Auth"],
@@ -112,19 +125,6 @@ export const projects = [
     link: "https://github.com/hamim23z/NBA-Championship-Predictor",
     linkType: "github",
     image: "/nbalogo.png",
-  },
-  {
-    id: "smart-finder",
-    title: "Smart Finder",
-    category: "web",
-    status: "paused",
-    date: "Delayed",
-    description:
-      "The purpose of this project is to serve as a map based, geolocation website for delis and bodegas. Within a certain radius, users will be able to see different stores and the sandwich prices there. They will be able to leave photos, reviews, and have access to deals too! Plenty of more features available as well.",
-    tech: ["Next.js", "Node.js", "React", "JavaScript", "Material UI", "Docker", "MySQL", "Google APIs", "OpenAI", "Stack Auth"],
-    link: null,
-    linkType: null,
-    image: "/smart_finder_logo.png",
   },
   {
     id: "blizzard-bot",
