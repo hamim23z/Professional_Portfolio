@@ -1,0 +1,71 @@
+.groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.group {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.groupTitle {
+  margin-bottom: 18px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text-mute);
+}
+
+.groupTitle span {
+  color: var(--accent);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-elev);
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.15s, border-color 0.15s, transform 0.15s;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: var(--text-mute);
+  transition: color 0.15s;
+}
+
+.item:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+}
+
+.item:hover .icon {
+  color: var(--brand, var(--accent));
+}
+
+@media (max-width: 760px) {
+  .groups {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .group {
+    padding: 20px 18px;
+  }
+}

@@ -1,70 +1,80 @@
-"use client";
-import React from "react";
-import { Box, Grid, Typography, Paper } from "@mui/material";
+import SectionHeading from "./SectionHeading";
 import {
-  SiDocker,
-  SiMysql,
-  SiJavascript,
   SiPython,
+  SiJavascript,
+  SiTypescript,
+  SiMysql,
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiFlask,
   SiPandas,
-  SiScikitlearn
+  SiScikitlearn,
+  SiOpenai,
+  SiClaude,
+  SiDocker,
+  SiGit,
+  SiSupabase,
 } from "react-icons/si";
+import { stackGroups } from "../data/stack";
+import styles from "./TechStack.module.css";
 
-export function TechStack() {
-  const techStack = [
-    { name: "Python", icon: <SiPython size={40} />, color: "#306998" },
-    { name: "Pandas", icon: <SiPandas size={40} />, color: "#094c83eb" },
-    { name: "Scikit", icon: <SiScikitlearn size={40} />, color: "#cd8615eb" },
-    { name: "SQL", icon: <SiMysql size={40} />, color: "#4479A1" },
-    { name: "Docker", icon: <SiDocker size={40} />, color: "#2496ED" },
-    { name: "JS/TS", icon: <SiJavascript size={40} />, color: "#F7DF1E" },
-  ];
+const icons = {
+  SiPython,
+  SiJavascript,
+  SiTypescript,
+  SiMysql,
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiFlask,
+  SiPandas,
+  SiScikitlearn,
+  SiOpenai,
+  SiClaude,
+  SiDocker,
+  SiGit,
+  SiSupabase,
+};
 
+export default function TechStack() {
   return (
-    <Box
-      sx={{
-        marginTop: "10px",
-        padding: "20px",
-        textAlign: "center",
-        borderRadius: "10px",
-      }}
-    >
-      <Grid container spacing={4} justifyContent="center">
-        {techStack.map((tech, index) => (
-          <Grid item xs={6} sm={4} md={2} key={index}>
-            <Paper
-              elevation={3}
-              sx={{
-                padding: "20px",
-                textAlign: "center",
-                backgroundColor: "#151312",
-                borderRadius: "10px",
-                border: "1px solid #fff",
-                color: "white",
-                transition: "transform 0.3s",
-                "&:hover": {
-                  transform: "scale(1.1)",
-                },
-              }}
-            >
-              <Box
-                sx={{
-                  color: tech.color,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  marginBottom: "10px",
-                }}
-              >
-                {tech.icon}
-              </Box>
-              <Typography variant="body1" sx={{ fontWeight: 600 }}>
-                {tech.name}
-              </Typography>
-            </Paper>
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+    <section id="stack" className="section" aria-labelledby="stack-title">
+      <div className="container">
+        <SectionHeading index="03" label="stack" title="Tech Stack" id="stack-title">
+          The languages, frameworks, and tools I reach for most.
+        </SectionHeading>
+
+        <div className={styles.groups}>
+          {stackGroups.map((group) => (
+            <div key={group.id} className={styles.group}>
+              <h3 className={styles.groupTitle}>
+                <span aria-hidden="true">{"// "}</span>
+                {group.title}
+              </h3>
+              <ul className={styles.list}>
+                {group.items.map((item) => {
+                  const Icon = icons[item.icon];
+                  return (
+                    <li
+                      key={item.name}
+                      className={styles.item}
+                      style={{ "--brand": item.color }}
+                    >
+                      <Icon className={styles.icon} aria-hidden="true" />
+                      <span>{item.name}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

@@ -1,0 +1,142 @@
+// status: "completed" | "current" | "paused"
+// linkType: "github" | "live" | null
+export const categories = [
+  { id: "all", label: "All" },
+  { id: "ml", label: "ML & AI" },
+  { id: "web", label: "Web Apps" },
+  { id: "data", label: "Data" },
+  { id: "tools", label: "Tools & Bots" },
+];
+
+export const projects = [
+  {
+    id: "spacesync",
+    title: "SpaceSync",
+    category: "ml",
+    status: "completed",
+    date: "May 2026",
+    description:
+      "SpaceSync is a multi-agent reinforcement learning (MARL) system that simulates collaborative furniture placement in augmented reality environments. SpaceSync explores how specialized AI agents can work together to solve a real-world interior design problem; furnishing a room that balances space efficiency, aesthetic coherence, and budget constraints.",
+    tech: ["Python", "PettingZoo", "NumPy", "MatPlotLib", "OpenCV", "YoloV8", "HuggingFace", "Git"],
+    link: "https://github.com/hamim23z/SpaceSync_v1",
+    linkType: "github",
+    image: "/furniture.png",
+  },
+  {
+    id: "betterreadme",
+    title: "BetterReadMe",
+    category: "tools",
+    status: "completed",
+    date: "April 2026",
+    description:
+      "BetterReadMe is a web-based tool designed to help developers create clean, professional, and fully structured README.md files with ease. Whether you're applying for internships, jobs, or documenting projects at work. It simplifies documentation, saves time, and ensures your projects are presented clearly and professionally.",
+    tech: ["Node.js", "JavaScript", "Inquirer", "Commander", "HuggingFace", "NPM", "DotENV", "Git"],
+    link: "https://github.com/hamim23z/BetterReadMe",
+    linkType: "github",
+    image: "/coding.png",
+  },
+  {
+    id: "pdf-chatbot",
+    title: "Personal PDF Chatbot",
+    category: "ml",
+    status: "completed",
+    date: "March 2026",
+    description:
+      "MultiPDF is a web-based application that allows users to interact with multiple PDF documents through a conversational interface. It enables users to upload PDFs, ask questions, and receive accurate answers with source citations. The platform uses advanced retrieval techniques to ensure relevant information is surfaced, even across multiple documents.",
+    tech: ["Python", "LangChain", "Streamlit", "FAISS", "HuggingFace", "PyPDF2"],
+    link: "https://personalpdfreader.streamlit.app",
+    linkType: "live",
+    image: "/pdf.png",
+  },
+  {
+    id: "fintrack",
+    title: "FinTrack",
+    category: "web",
+    status: "completed",
+    date: "Jan 2025",
+    description:
+      "Managing your money isn’t always easy. Expenses pile up, it’s hard to remember what you spent where, and tracking it all can be confusing. FinTrack puts everything in one place. See all your expenses, filter your spending by category, and get a clear view of your money with a pie chart. Stay on top of your finances without the extra headache.",
+    tech: ["Python", "Flask", "HTML", "Tailwind CSS", "Jinja", "Chart.js", "SQLite"],
+    link: "https://github.com/hamim23z/FinTrack",
+    linkType: "github",
+    image: "/finance.png",
+  },
+  {
+    id: "engrnuity",
+    title: "Engrnuity",
+    category: "web",
+    status: "current",
+    date: "Ongoing",
+    description:
+      "Engrnuity is a web based application that serves as a study website strictly for engineering students who go to CUNY colleges in New York. Users will be able to create flashcards, generate cards using AI, watch videos, take quizzes, gain access to past exams and textbooks, RateMyProfessor, etc. The waitlist for Engrnuity is live and changes are being made daily!",
+    tech: ["Next.js", "Node.js", "React.js", "JavaScript", "TypeScript", "PostgreSQL", "Firebase", "Material UI", "Next Auth"],
+    link: "https://engrnuity.vercel.app/",
+    linkType: "live",
+    image: "/engrnuity_circle.png",
+  },
+  {
+    id: "energy-usage",
+    title: "Energy Usage & Building Efficiency",
+    category: "data",
+    status: "completed",
+    date: "Dec 2025",
+    description:
+      "This project a web-based data visualization platform that analyzes building-level energy consumption across New York City using public datasets. The application allows users to filter and explore the 5 boroughs of NYC through the interactive dashboard and plots. The goal is to help users make informed decisions around building operations, purchasing, and policy.",
+    tech: ["Python", "Flask", "DuckDB", "HTML", "Pandas", "NumPy", "Seaborn", "Kaggle", "NYC Open Data"],
+    link: "https://github.com/hamim23z/Energy_Usage_and_Building_Efficiency",
+    linkType: "github",
+    image: "/electricity_meter.png",
+  },
+  {
+    id: "ertan-eats",
+    title: "Ertan Eats",
+    category: "web",
+    status: "completed",
+    date: "Oct 2025",
+    description:
+      "A lot of people know him. Some people may not know him. @newyorkturk on Instagram, TikTok, and YouTube. He is an influencer who goes to different fine dining, regular dining, and Michelin star restaurants all across the city. This website is designed to keep track of where he eats, what he orders, ratings, etc. All in one centralized location for his fan base.",
+    tech: ["Next.js", "Node.js", "React.js", "JavaScript", "TypeScript", "Supabase", "Material UI"],
+    link: "https://ertaneats.vercel.app/",
+    linkType: "live",
+    image: "/nyturk.jpg",
+  },
+  {
+    id: "nba-predictor",
+    title: "NBA Championship Predictor",
+    category: "ml",
+    status: "completed",
+    date: "Sep 2025",
+    description:
+      "Using a Kaggle Dataset of all the past NBA Championships, I altered it to also get the Eastern and Western Conference champions and then used Machine Learning to get the next 25 NBA Champions. I used the Random Forest classifier as well as Jupyter Notebooks. This is a very basic implementation so there will be a part two with much more detail.",
+    tech: ["Python", "Pandas", "NumPy", "Random Forest", "Scikit-learn", "Jupyter Notebooks"],
+    link: "https://github.com/hamim23z/NBA-Championship-Predictor",
+    linkType: "github",
+    image: "/nbalogo.png",
+  },
+  {
+    id: "smart-finder",
+    title: "Smart Finder",
+    category: "web",
+    status: "paused",
+    date: "Delayed",
+    description:
+      "The purpose of this project is to serve as a map based, geolocation website for delis and bodegas. Within a certain radius, users will be able to see different stores and the sandwich prices there. They will be able to leave photos, reviews, and have access to deals too! Plenty of more features available as well.",
+    tech: ["Next.js", "Node.js", "React", "JavaScript", "Material UI", "Docker", "MySQL", "Google APIs", "OpenAI", "Stack Auth"],
+    link: null,
+    linkType: null,
+    image: "/smart_finder_logo.png",
+  },
+  {
+    id: "blizzard-bot",
+    title: "Blizzard Bot",
+    category: "tools",
+    status: "completed",
+    date: "Jan 2023",
+    description:
+      "Blizzard Bot is a Discord based bot that I worked on early 2023 very frequently. The purpose of this project was to allow users in Discord servers to convert shoe sizes, check websites for bot security, give information about which companies are the best for botting, and provide raffle links to certain sneakers. This garnished hundreds of users daily.",
+    tech: ["Python", "Discord.py"],
+    link: "https://github.com/hamim23z/BlizzardBot1",
+    linkType: "github",
+    image: "/blizzardbot_logo.png",
+  },
+];

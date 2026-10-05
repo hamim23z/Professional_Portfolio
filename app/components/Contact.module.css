@@ -1,0 +1,137 @@
+.panel {
+  display: grid;
+  gap: 18px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 28px;
+  border: 1px solid var(--accent-ring);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(600px 160px at 0% 0%, rgba(61, 220, 151, 0.12), transparent 70%),
+    var(--surface);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.email:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.emailIcon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  flex: none;
+  border-radius: 14px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 1.2rem;
+}
+
+.emailLabel {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+}
+
+.emailValue {
+  display: block;
+  margin-top: 2px;
+  font-size: clamp(1.05rem, 3.2vw, 1.7rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+}
+
+.channels {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.channel {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 100%;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.channel:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-2);
+  transform: translateY(-2px);
+}
+
+.channelIcon {
+  flex: none;
+  font-size: 1.3rem;
+  color: var(--text-dim);
+  transition: color 0.15s;
+}
+
+.channel:hover .channelIcon,
+.channel:hover .arrow {
+  color: var(--accent);
+}
+
+.channelText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.channelLabel {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.channelValue {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-mute);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.arrow {
+  color: var(--text-mute);
+  font-family: var(--font-mono);
+  transition: color 0.15s, transform 0.15s;
+}
+
+.channel:hover .arrow {
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 960px) {
+  .channels {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .email {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 18px;
+  }
+
+  .channels {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
