@@ -1,0 +1,31 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding-block: 28px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-mute);
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+}
+
+.prompt {
+  margin-right: 4px;
+  color: var(--accent);
+}
+
+.footer a {
+  color: var(--text-dim);
+  border-bottom: 1px dashed var(--border-strong);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.footer a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
