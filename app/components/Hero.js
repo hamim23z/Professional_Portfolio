@@ -8,8 +8,8 @@ import styles from "./Hero.module.css";
 const stats = [
   { value: String(experience.length), label: "roles & internships" },
   { value: String(projects.length), label: "projects built" },
-  { value: "26,000+", label: "systems processed per run" },
-  { value: "2.5 MW", label: "recovered across 183 systems" },
+  { value: "10,000", label: "steps averaged every day" },
+  { value: "7", label: "states/countries visited" },
 ];
 
 const socials = [
@@ -105,7 +105,7 @@ export default function Hero() {
               {"\n  "}
               <span className={styles.key}>&quot;role&quot;</span>
               <span className={styles.punc}>: </span>
-              <span className={styles.str}>&quot;Software Engineer&quot;</span>
+              <span className={styles.str}>&quot;Systems/Software Engineer&quot;</span>
               <span className={styles.punc}>,</span>
               {"\n  "}
               <span className={styles.key}>&quot;education&quot;</span>
@@ -118,24 +118,13 @@ export default function Hero() {
               <span className={styles.str}>&quot;Systems Engineer Intern @ Bloom Energy&quot;</span>
               <span className={styles.punc}>,</span>
               {"\n  "}
-              <span className={styles.key}>&quot;builds&quot;</span>
-              <span className={styles.punc}>: [</span>
-              <span className={styles.str}>&quot;ML&quot;</span>
-              <span className={styles.punc}>, </span>
-              <span className={styles.str}>&quot;data pipelines&quot;</span>
-              <span className={styles.punc}>, </span>
-              <span className={styles.str}>&quot;web apps&quot;</span>
-              <span className={styles.punc}>],</span>
-              {"\n  "}
               <span className={styles.key}>&quot;stack&quot;</span>
               <span className={styles.punc}>: [</span>
               <span className={styles.str}>&quot;Python&quot;</span>
               <span className={styles.punc}>, </span>
               <span className={styles.str}>&quot;JS/TS&quot;</span>
               <span className={styles.punc}>, </span>
-              <span className={styles.str}>&quot;React&quot;</span>
-              <span className={styles.punc}>, </span>
-              <span className={styles.str}>&quot;Next.js&quot;</span>
+              <span className={styles.str}>&quot;AI/ML&quot;</span>
               <span className={styles.punc}>]</span>
               {"\n"}
               <span className={styles.punc}>{"}"}</span>
