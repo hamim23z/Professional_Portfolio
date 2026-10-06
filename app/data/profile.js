@@ -1,7 +1,7 @@
 export const profile = {
   name: "Hamim Choudhury",
   handle: "hamim",
-  role: "Software Engineer",
+  role: "Systems & Software Engineer",
   tagline: "A software engineer with a passion to develop projects, big or small.",
   about: [
     "Hi! I'm Hamim Choudhury, a current senior at The City College of New York pursuing a BS in Computer Science.",
